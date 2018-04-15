@@ -2,7 +2,7 @@
 
 Because talking about yourself is hard, here, have it as a man page :)
 
-Inspired by the idea from [Major Hayden](https://major.io).
+Inspired by an oringinal idea from [Major Hayden](https://major.io).
 
 ```troff
 DCASATI(1)		  BSD General Commands Manual		    DCASATI(1)
