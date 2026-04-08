@@ -13,35 +13,138 @@
 .\" IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
 .\" OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd April 15, 2018
+.Dd April 8, 2026
 .Dt DCASATI 1
 .Os
 .Sh NAME
 .Nm dcasati
-.Nd Diego Casati: a (curious) Engineer
+.Nd Diego Casati: an (opinionated) Cloud Native Engineer
 .Sh SYNOPSIS
-.Nm
-.Op Fl network-engineer | Fl software-defined-(network|storage)
-.Op Fl software-development | Fl orchestration | Fl devops
+.Nm dcasati
+.Op Fl application-modernization | Fl cloud-native | Fl platform-engineering
+.Op Fl kubernetes | Fl containers | Fl serverless
+.Op Fl devops | Fl gitops | Fl infrastructure-as-code
+.Op Fl cxo-advisory | Fl pre-sales | Fl thought-leadership
 .Sh DESCRIPTION
 The
-.Nm
-is a Senior Software Engineer for Microsoft focusing on Kubernetes,
-Networking and Linux/BSDs. Prior to his current role at Microsoft, 
-he spent over a decade working in the Telco and IT industries at 
-various capacities, from Network Engineering to Systems Engineering and
-Security Specialist.
+.Nm dcasati
+utility is a Principal Cloud Native Computing Technical Specialist and
+Azure Global Black Belt at Microsoft, specializing in Application
+Modernization for enterprise customers across North America.
 .Pp
-He is a strong proponent of free and open source solutions, advocating
-for the use of BSDs to connect all things.
+He helps organizations migrate and modernize legacy workloads onto
+Azure-native platforms including AKS, Azure Red Hat OpenShift (ARO),
+Azure Container Apps (ACA), App Service, and Azure Functions. He is
+equally comfortable whiteboarding a microservices architecture with a
+CTO and writing the Helm chart that deploys it.
 .Pp
-When not hacking on computers, you can catch him spending time playing with his 
-1-year-old son.
+Prior to his current role, he spent over a decade in the Telco and IT
+industries, accumulating experience across Network Engineering, Systems
+Engineering, Security, OpenStack private cloud, and enterprise storage
+before joining Microsoft in 2017.
+.Pp
+He is a strong proponent of open source, GitOps, and the philosophy
+that infrastructure should be version-controlled, reviewed, and
+reproducible. He has a bad habit of turning every customer conversation
+into a Kubernetes architecture diagram.
+.Pp
+When not on a call with a CXO or reviewing a pull request, you can
+find him chasing his kid around Calgary or convincing himself he needs
+another homelab node.
+.Sh OPTIONS
+The following options are supported:
+.Bl -tag -width Ds
+.It Fl application-modernization
+Engages legacy-to-cloud-native migration mode. Outputs modernization
+roadmaps, reference architectures, and solution accelerators.
+Warns loudly when lift-and-shift is proposed instead of re-architect.
+.It Fl kubernetes
+Deploys opinions about cluster topology, workload identity, autoscaling
+strategies, and why your namespace naming convention matters.
+.It Fl containers
+Emits Dockerfiles, Helm charts, and strong feelings about image
+scanning and supply chain security.
+.It Fl serverless
+Activates Azure Functions and ACA expertise. Side effect: will
+suggest event-driven architecture for problems that may not need it.
+.It Fl gitops
+Enables GitOps mode using Flux or ArgoCD. Will not approve any
+deployment that cannot be expressed as a Git commit.
+.It Fl cxo-advisory
+Switches to executive engagement mode. Translates technical
+architecture decisions into business outcomes, cost savings, and
+competitive positioning vs AWS and GCP.
+.It Fl thought-leadership
+Produces blog posts, conference talks, reference architectures, and
+demos. May result in unsolicited opinions posted to the internet.
+.El
+.Sh EXIT STATUS
+Returns 0 (success) on most customer engagements.
+Returns 1 when asked to recommend a non-Azure hyperscaler.
+Returns EAGAIN when "just one more slide deck" is requested.
+.Sh ENVIRONMENT
+.Bl -tag -width CLOUD
+.It Ev CLOUD
+Preferred value: Azure. Tolerates AWS and GCP for competitive analysis.
+.It Ev SHELL
+zsh. Obviously.
+.It Ev EDITOR
+vim. This is not up for debate.
+.It Ev TIMEZONE
+America/Edmonton. Meetings before 08:00 local are considered a bug.
+.El
+.Sh FILES
+.Bl -tag -width github.com/dcasati -compact
+.It Pa github.com/dcasati
+Source code, IaC templates, and half-finished side projects.
+.It Pa linkedin.com/in/diegocasati
+Professional history, endorsements, and recruiters sliding into DMs.
+.It Pa aka.ms/architecture-center
+Spiritual home. Consult before architecting anything.
+.El
+.Sh EXAMPLES
+Spin up a new application modernization engagement:
+.Pp
+.Dl dcasati -application-modernization -kubernetes -cxo-advisory
+.Pp
+Run a competitive displacement against AWS EKS:
+.Pp
+.Dl dcasati -kubernetes -cxo-advisory --exceed-expectations
+.Pp
+Deliver a technical talk on GitOps at a customer briefing:
+.Pp
+.Dl dcasati -gitops -thought-leadership --coffee required
+.Sh DIAGNOSTICS
+.Bl -diag
+.It "Why not just use managed VMs?"
+This message indicates the customer has not yet seen the AKS cost
+model. Schedule an architecture design session immediately.
+.It "Can we do this in 2 weeks?"
+Non-fatal warning. Roadmap will be adjusted. Expectations will be
+managed. Coffee consumption will increase.
+.It "We're evaluating GCP."
+Informational. Initiates competitive analysis subroutine. Not fatal.
+.El
 .Sh SEE ALSO
-- dcasati @github
+.Xr kubectl 1 ,
+.Xr az 1 ,
+.Xr git 1 ,
+.Xr terraform 1
 .Pp
-- diegocasati @Twitter
+.Lk https://github.com/dcasati "dcasati @ GitHub"
+.Pp
+.Lk https://www.linkedin.com/in/diegocasati "diegocasati @ LinkedIn"
+.Sh STANDARDS
+Complies with the Azure Well-Architected Framework, CNCF project
+maturity guidelines, and the Twelve-Factor App methodology.
+Loosely compliant with work-life balance RFCs.
 .Sh BUGS
-Too many to list here ;)
+Too many to list here.
+Known issue: will refactor your CI/CD pipeline even when not asked.
+Occasionally over-engineers solutions for simple problems.
+.Sh CERTIFICATIONS
+Microsoft Certified: Azure Solutions Architect Expert
+.Pp
+Expert \(em Azure Architecture Center
 .Sh AUTHOR
-Diego Casati <diego.casati@gmail.com>
+.An Diego Casati Aq Mt diego.casati@gmail.com
