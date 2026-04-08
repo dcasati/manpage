@@ -1,42 +1,65 @@
-# Resume as a manual page 
+# Resume as a manual page
 
 Because talking about yourself is hard, here, have it as a man page :)
 
-Inspired by an oringinal idea from [Major Hayden](https://major.io).
+Inspired by an original idea from [Major Hayden](https://major.io).
+
+## Usage
+
+```sh
+man ./dcasati.1
+```
+
+Or render to plain text:
+
+```sh
+groff -mandoc -Tascii dcasati.1 | less
+```
+
+## Preview
 
 ```troff
-DCASATI(1)		  BSD General Commands Manual		    DCASATI(1)
+DCASATI(1)                BSD General Commands Manual               DCASATI(1)
 
 NAME
-     dcasati -- Diego Casati: a (curious) Engineer
+     dcasati -- Diego Casati: an (opinionated) Cloud Native Engineer
 
 SYNOPSIS
-     dcasati [-network-engineer | -software-defined-(network|storage)]
-	     [-software-development | -orchestration | -devops]
+     dcasati [-application-modernization | -cloud-native | -platform-engineering]
+             [-kubernetes | -containers | -serverless]
+             [-devops | -gitops | -infrastructure-as-code]
+             [-cxo-advisory | -pre-sales | -thought-leadership]
 
 DESCRIPTION
-     The dcasati is a Senior Software Engineer for Microsoft focusing on
-     Kubernetes, Networking and Linux/BSDs. Prior to his current role at
-     Microsoft, he spent over a decade working in the Telco and IT industries
-     at various capacities, from Network Engineering to Systems Engineering
-     and Security Specialist.
+     The dcasati utility is a Principal Cloud Native Computing Technical
+     Specialist and Azure Global Black Belt at Microsoft, specializing in
+     Application Modernization for enterprise customers across North America.
 
-     He is a strong proponent of free and open source solutions, advocating
-     for the use of BSDs to connect all things.
+     He helps organizations migrate and modernize legacy workloads onto
+     Azure-native platforms including AKS, Azure Red Hat OpenShift (ARO),
+     Azure Container Apps (ACA), App Service, and Azure Functions. He is
+     equally comfortable whiteboarding a microservices architecture with a
+     CTO and writing the Helm chart that deploys it.
 
-     When not hacking on computers, you can catch him spending time playing
-     with his 1-year-old son.
+     He is a strong proponent of open source, GitOps, and the philosophy
+     that infrastructure should be version-controlled, reviewed, and
+     reproducible. He has a bad habit of turning every customer conversation
+     into a Kubernetes architecture diagram.
+
+     When not on a call with a CXO or reviewing a pull request, you can find
+     him chasing his kid around Calgary or convincing himself he needs another
+     homelab node.
 
 SEE ALSO
-     - dcasati @github
-
-     - diegocasati @Twitter
+     https://github.com/dcasati
+     https://www.linkedin.com/in/diegocasati/
 
 BUGS
-     Too many to list here ;)
+     Too many to list here.
+     Known issue: will refactor your CI/CD pipeline even when not asked.
 
 AUTHOR
      Diego Casati <diego.casati@gmail.com>
 
-BSD				April 15, 2018				   BSD
+BSD                        April 8, 2026                            BSD
 ```
