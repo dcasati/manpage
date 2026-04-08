@@ -46,9 +46,8 @@ DESCRIPTION
      reproducible. He has a bad habit of turning every customer conversation
      into a Kubernetes architecture diagram.
 
-     When not on a call with a CXO or reviewing a pull request, you can find
-     him chasing his kid around Calgary or convincing himself he needs another
-     homelab node.
+     Outside of work, he enjoys camping, electronics tinkering, and off-grid
+     radio in the Canadian Rockies.
 
 SEE ALSO
      https://github.com/dcasati
