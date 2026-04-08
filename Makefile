@@ -1,4 +1,4 @@
-MANDIR = /usr/share/man
+MANDIR = /usr/local/share/man
 
 .PHONY: install
 install:
