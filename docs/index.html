@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dcasati(1) — Diego Casati</title>
+    <meta name="description" content="Diego Casati: an (opinionated) Cloud Native Engineer — resume as a man page">
+    <style>
+        :root {
+            --bg: #1e1e2e;
+            --fg: #cdd6f4;
+            --green: #a6e3a1;
+            --blue: #89b4fa;
+            --magenta: #cba6f7;
+            --yellow: #f9e2af;
+            --red: #f38ba8;
+            --surface: #313244;
+            --overlay: #45475a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--fg);
+            font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', 'Cascadia Code', 'Menlo', 'Consolas', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .terminal {
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        .terminal-titlebar {
+            background: var(--surface);
+            padding: 12px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .terminal-btn {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .terminal-btn.close { background: var(--red); }
+        .terminal-btn.minimize { background: var(--yellow); }
+        .terminal-btn.maximize { background: var(--green); }
+
+        .terminal-title {
+            flex: 1;
+            text-align: center;
+            color: var(--overlay);
+            font-size: 12px;
+        }
+
+        .terminal-body {
+            background: var(--bg);
+            padding: 2rem 2.5rem;
+            overflow-x: auto;
+        }
+
+        .manpage {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .section-header {
+            color: var(--blue);
+            font-weight: bold;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .section-header:first-child {
+            margin-top: 0;
+        }
+
+        .manpage-header {
+            color: var(--magenta);
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1.5em;
+        }
+
+        .manpage-footer {
+            color: var(--magenta);
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2em;
+        }
+
+        .bold {
+            color: var(--green);
+            font-weight: bold;
+        }
+
+        .flag {
+            color: var(--yellow);
+        }
+
+        .link {
+            color: var(--blue);
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+        a {
+            color: var(--blue);
+            text-decoration: underline;
+            text-decoration-style: dotted;
+        }
+
+        a:hover {
+            color: var(--green);
+        }
+
+        .indent {
+            padding-left: 5ch;
+        }
+
+        .indent2 {
+            padding-left: 10ch;
+        }
+
+        .example {
+            color: var(--green);
+        }
+
+        .diagnostic {
+            color: var(--yellow);
+            font-style: italic;
+        }
+
+        .prompt {
+            color: var(--green);
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 1.2em;
+            background: var(--fg);
+            animation: blink 1s step-end infinite;
+            vertical-align: bottom;
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+
+        @media (max-width: 640px) {
+            .terminal {
+                margin: 0;
+                border-radius: 0;
+            }
+            .terminal-body {
+                padding: 1rem 1.2rem;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-titlebar">
+            <div class="terminal-btn close"></div>
+            <div class="terminal-btn minimize"></div>
+            <div class="terminal-btn maximize"></div>
+            <div class="terminal-title">man dcasati</div>
+        </div>
+        <div class="terminal-body">
+            <div class="manpage">
+<div class="manpage-header">DCASATI(1)                  BSD General Commands Manual                 DCASATI(1)</div>
+
+<div class="section-header">NAME</div>
+<div class="indent"><span class="bold">dcasati</span> — Diego Casati: an (opinionated) Cloud Native Engineer</div>
+
+<div class="section-header">SYNOPSIS</div>
+<div class="indent"><span class="bold">dcasati</span> [<span class="flag">-application-modernization</span> | <span class="flag">-cloud-native</span> | <span class="flag">-platform-engineering</span>]
+     [<span class="flag">-kubernetes</span> | <span class="flag">-containers</span> | <span class="flag">-serverless</span>]
+     [<span class="flag">-devops</span> | <span class="flag">-gitops</span> | <span class="flag">-infrastructure-as-code</span>]
+     [<span class="flag">-cxo-advisory</span> | <span class="flag">-pre-sales</span> | <span class="flag">-thought-leadership</span>]</div>
+
+<div class="section-header">DESCRIPTION</div>
+<div class="indent">The <span class="bold">dcasati</span> utility is a Principal Cloud Native Computing Technical
+Specialist and Azure Global Black Belt at Microsoft, specializing in
+Application Modernization for enterprise customers across North America.
+
+He helps organizations migrate and modernize legacy workloads onto
+Azure-native platforms including AKS, Azure Red Hat OpenShift (ARO),
+Azure Container Apps (ACA), App Service, and Azure Functions. He is
+equally comfortable whiteboarding a microservices architecture with a
+CTO and writing the Helm chart that deploys it.
+
+Prior to his current role, he spent over a decade in the Telco and IT
+industries, accumulating experience across Network Engineering, Systems
+Engineering, Security, OpenStack private cloud, and enterprise storage
+before joining Microsoft in 2017.
+
+He is a strong proponent of open source, GitOps, and the philosophy
+that infrastructure should be version-controlled, reviewed, and
+reproducible. He has a bad habit of turning every customer conversation
+into a Kubernetes architecture diagram.
+
+Outside of work, he enjoys camping, electronics tinkering, and
+off-grid radio in the Canadian Rockies.</div>
+
+<div class="section-header">OPTIONS</div>
+<div class="indent">The following options are supported:
+
+<span class="flag">-application-modernization</span>
+<div class="indent">Engages legacy-to-cloud-native migration mode. Outputs modernization
+roadmaps, reference architectures, and solution accelerators.
+Warns loudly when lift-and-shift is proposed instead of re-architect.</div>
+
+<span class="flag">-kubernetes</span>
+<div class="indent">Deploys opinions about cluster topology, workload identity, autoscaling
+strategies, and why your namespace naming convention matters.</div>
+
+<span class="flag">-containers</span>
+<div class="indent">Emits Dockerfiles, Helm charts, and strong feelings about image
+scanning and supply chain security.</div>
+
+<span class="flag">-serverless</span>
+<div class="indent">Activates Azure Functions and ACA expertise. Side effect: will
+suggest event-driven architecture for problems that may not need it.</div>
+
+<span class="flag">-gitops</span>
+<div class="indent">Enables GitOps mode using Flux or ArgoCD. Will not approve any
+deployment that cannot be expressed as a Git commit.</div>
+
+<span class="flag">-cxo-advisory</span>
+<div class="indent">Switches to executive engagement mode. Translates technical
+architecture decisions into business outcomes, cost savings, and
+competitive positioning vs AWS and GCP.</div>
+
+<span class="flag">-thought-leadership</span>
+<div class="indent">Produces blog posts, conference talks, reference architectures, and
+demos. May result in unsolicited opinions posted to the internet.</div>
+</div>
+
+<div class="section-header">EXIT STATUS</div>
+<div class="indent">Returns 0 (success) on most customer engagements.
+Returns 1 when asked to recommend a non-Azure hyperscaler.
+Returns EAGAIN when "just one more slide deck" is requested.</div>
+
+<div class="section-header">ENVIRONMENT</div>
+<div class="indent"><span class="bold">CLOUD</span>       Preferred value: Azure. Tolerates AWS and GCP for competitive analysis.
+<span class="bold">SHELL</span>       bash. Obviously.
+<span class="bold">EDITOR</span>      vim. This is not up for debate.
+<span class="bold">TIMEZONE</span>    America/Edmonton. Meetings before 08:00 local are considered a bug.</div>
+
+<div class="section-header">FILES</div>
+<div class="indent"><a href="https://github.com/dcasati">github.com/dcasati</a>
+<div class="indent">Source code, IaC templates, and half-finished side projects.</div>
+
+<a href="https://linkedin.com/in/diegocasati">linkedin.com/in/diegocasati</a>
+<div class="indent">Professional history, endorsements, and recruiters sliding into DMs.</div>
+
+<a href="https://aka.ms/architecture-center">aka.ms/architecture-center</a>
+<div class="indent">Spiritual home. Consult before architecting anything.</div>
+</div>
+
+<div class="section-header">EXAMPLES</div>
+<div class="indent">Spin up a new application modernization engagement:
+
+     <span class="example">dcasati -application-modernization -kubernetes -cxo-advisory</span>
+
+Run a competitive displacement against AWS EKS:
+
+     <span class="example">dcasati -kubernetes -cxo-advisory --exceed-expectations</span>
+
+Deliver a technical talk on GitOps at a customer briefing:
+
+     <span class="example">dcasati -gitops -thought-leadership --coffee required</span></div>
+
+<div class="section-header">DIAGNOSTICS</div>
+<div class="indent"><span class="diagnostic">"Why not just use managed VMs?"</span>
+<div class="indent">This message indicates the customer has not yet seen the AKS cost
+model. Schedule an architecture design session immediately.</div>
+
+<span class="diagnostic">"Can we do this in 2 weeks?"</span>
+<div class="indent">Non-fatal warning. Roadmap will be adjusted. Expectations will be
+managed. Coffee consumption will increase.</div>
+
+<span class="diagnostic">"We're evaluating GCP."</span>
+<div class="indent">Informational. Initiates competitive analysis subroutine. Not fatal.</div>
+</div>
+
+<div class="section-header">SEE ALSO</div>
+<div class="indent">kubectl(1), az(1), git(1), terraform(1)
+
+<a href="https://github.com/dcasati">dcasati @ GitHub</a>
+<a href="https://www.linkedin.com/in/diegocasati">diegocasati @ LinkedIn</a></div>
+
+<div class="section-header">STANDARDS</div>
+<div class="indent">Complies with the Azure Well-Architected Framework, CNCF project
+maturity guidelines, and the Twelve-Factor App methodology.
+Loosely compliant with work-life balance RFCs.</div>
+
+<div class="section-header">BUGS</div>
+<div class="indent">Too many to list here.
+Known issue: will refactor your CI/CD pipeline even when not asked.
+Occasionally over-engineers solutions for simple problems.</div>
+
+<div class="section-header">CERTIFICATIONS</div>
+<div class="indent">Microsoft Certified: Azure Solutions Architect Expert
+Expert — Azure Architecture Center</div>
+
+<div class="section-header">AUTHOR</div>
+<div class="indent">Diego Casati &lt;<a href="mailto:diego.casati@gmail.com">diego.casati@gmail.com</a>&gt;</div>
+
+<div class="manpage-footer">BSD                             April 8, 2026                            BSD</div>
+
+<div style="margin-top: 1.5em;"><span class="prompt">$</span> <span class="cursor"></span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
