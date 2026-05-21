@@ -48,6 +48,20 @@ that infrastructure should be version-controlled, reviewed, and
 reproducible. He has a bad habit of turning every customer conversation
 into a Kubernetes architecture diagram.
 .Pp
+He is the co-creator of Project Nighthawk, a multi-agent research
+system built inside VS Code with GitHub Copilot that produces
+fact-checked, source-cited technical reports for field engineering.
+.Pp
+He writes regularly at azureglobalblackbelts.com and the Microsoft
+DevBlogs "All Things Azure" publication, covering topics from NVIDIA
+Dynamo disaggregated inference on AKS to continuous profiling with
+Pyroscope, ARO internals, and agentic platform engineering.
+.Pp
+He authored key sections of the official AKS Labs, including the
+Platform Engineering with Kubernetes (CAPZ + ASO + ArgoCD) and
+Migration workshops, and has presented these live on Microsoft
+Reactor's YouTube channel.
+.Pp
 Outside of work, he enjoys camping, electronics tinkering, and
 off-grid radio in the Canadian Rockies.
 .Sh OPTIONS
@@ -124,6 +138,49 @@ managed. Coffee consumption will increase.
 .It "We're evaluating GCP."
 Informational. Initiates competitive analysis subroutine. Not fatal.
 .El
+.Sh PUBLICATIONS
+.Bl -tag -width Ds
+.It "NVIDIA Dynamo on AKS: Disaggregated LLM Inference with H100 GPUs"
+azureglobalblackbelts.com, May 2026.
+.It "Continuous Profiling on AKS with Pyroscope, Blob Storage, and Managed Grafana"
+azureglobalblackbelts.com, May 2026.
+.It "Agentic Platform Engineering with GitHub Copilot"
+Microsoft DevBlogs \(em All Things Azure, March 2026.
+.It "Project Nighthawk: A Research Agent Built for Field Engineering"
+Microsoft DevBlogs \(em All Things Azure, April 2026.
+.It "When Infrastructure Scales But Understanding Doesn't"
+Microsoft DevBlogs \(em All Things Azure, March 2026.
+.It "The Human Scale Problem in Platform Engineering"
+Microsoft DevBlogs \(em All Things Azure, March 2026.
+.It "Tools of the Trade" (series)
+azureglobalblackbelts.com. Covers fzf, multi-cluster workflows, and terminal productivity.
+.It "ARO Storage Accounts: Under the Hood"
+azureglobalblackbelts.com, December 2025.
+.It "Understanding ICMP Traffic on AKS"
+azureglobalblackbelts.com, November 2025.
+.El
+.Sh TALKS
+.Bl -tag -width Ds
+.It "AKS Labs: Observability with Managed Prometheus and Managed Grafana"
+Microsoft Reactor, July 2025. Live hands-on workshop.
+.It "AKS Labs: Istio Service Mesh"
+Microsoft Reactor, July 2025. Live hands-on workshop.
+.El
+.Sh PROJECTS
+.Bl -tag -width Ds
+.It "Project Nighthawk"
+A multi-agent research system built inside VS Code with GitHub Copilot.
+Six-agent pipeline that produces fact-checked, source-cited technical
+reports from live source code and official documentation. Built for
+field engineering depth on AKS and ARO.
+.It "AKS Labs \(em Platform Engineering"
+Authored the Platform Engineering with Kubernetes workshop: CAPZ, ASO,
+ArgoCD, and GitOps-driven cluster lifecycle management.
+.It "AKS Labs \(em Migration"
+Authored the Migration section of the official AKS Labs.
+.It "azureglobalblackbelts.com"
+Technical blog for the Azure Global Black Belt team.
+.El
 .Sh SEE ALSO
 .Xr kubectl 1 ,
 .Xr az 1 ,
@@ -133,6 +190,12 @@ Informational. Initiates competitive analysis subroutine. Not fatal.
 .Lk https://github.com/dcasati "dcasati @ GitHub"
 .Pp
 .Lk https://www.linkedin.com/in/diegocasati "diegocasati @ LinkedIn"
+.Pp
+.Lk https://azureglobalblackbelts.com "Azure Global Black Belts Blog"
+.Pp
+.Lk https://devblogs.microsoft.com/all-things-azure/author/dicasati/ "All Things Azure \(em DevBlogs"
+.Pp
+.Lk https://azure-samples.github.io/aks-labs/ "AKS Labs"
 .Sh STANDARDS
 Complies with the Azure Well-Architected Framework, CNCF project
 maturity guidelines, and the Twelve-Factor App methodology.
