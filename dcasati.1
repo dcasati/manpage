@@ -13,7 +13,7 @@
 .\" IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
 .\" OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 .\"
-.Dd April 8, 2026
+.Dd October 27, 2026
 .Dt DCASATI 1
 .Os
 .Sh NAME
@@ -172,6 +172,60 @@ AKS Engineering Team Blog (blog.aks.azure.com), November 2025.
 Microsoft Reactor, July 2025. Live hands-on workshop.
 .It "AKS Labs: Istio Service Mesh"
 Microsoft Reactor, July 2025. Live hands-on workshop.
+.El
+.Sh RESEARCH & PRESENTATIONS
+.Bl -tag -width Ds
+.It "OpenBSD Packet Filtering Internals" (2005)
+.Em Kernel-Level Networking / Code Analysis
+.Bl -bullet
+.It
+Deconstructed kernel-space network architectures to audit memory
+pooling, stateful table lookup algorithms, and rule evaluation scaling.
+.It
+Analysed atomic state-tracking mechanics and tcpdump hooks to isolate
+potential race conditions and context-switching bottlenecks inside the
+stack.
+.El
+.It "What the Hack (WTH) \(em Liempde, Netherlands" (July 2005)
+.Em Offensive Engineering / Threat Emulation
+.Pp
+Presented "Undead Attack" alongside L. Spinola and A. Fortes, mapping
+adversarial tradecraft to complex network architecture weaknesses.
+Proof-of-concept research and exploit code are catalogued on the
+Sploitus Exploit Database (BID 13215, CVE-2005-1184).
+.Lk https://sploitus.com/exploit?id=EDB-ID:25439
+.Bl -bullet
+.It
+Engineered exploit payloads targeting protocol state engines and
+payload reassembly pipelines to bypass active firewall and IDS
+boundaries.
+.It
+Simulated advanced persistent threat (APT) chains utilizing custom C2
+beacons and egress tunneling techniques to map real-world threat
+matrices.
+.El
+.It "Electromagnetic Side-Channel Analysis [Tempest]" (2005)
+.Em Hardware Hacking / Side-Channel Red-Teaming
+.Bl -bullet
+.It
+Investigated physical-layer security vulnerabilities stemming from RF
+leakage, compromised bus interfaces, and unintentional hardware
+emissions.
+.It
+Modeled data extraction vectors via electromagnetic eavesdropping and
+formulated acoustic/thermal side-channel mitigation standards.
+.El
+.It "Network Security" (2005)
+.Em Cryptographic Architectures / Applied Blue-Teaming
+.Bl -bullet
+.It
+Designed comprehensive defense-in-depth frameworks leveraging public
+key infrastructure (PKI), TLS/SSL tuning, and cryptographically signed
+tokens.
+.It
+Developed network hardening manuals for traffic isolation, asymmetric
+key rotation, and real-time cryptographic anomaly detection.
+.El
 .El
 .Sh PROJECTS
 .Bl -tag -width Ds
